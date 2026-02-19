@@ -12,6 +12,8 @@ Las tablas se pueden relacionar de tres formas diferentes;
 (N:M) - muchos a muchos, donde a uno o muchos elementos de tabla A pertenecen uno o muchos elementos de tabla B. 
 
 La relacion (N:M) generalmente se expresa utilizando una tabla intermediaria que proteje las busquedas y no permite redundar a los datos.
+Estas tablas intermediarias sirven para reducir el problema a dos o mas relaciones de (1:N) (porque las bases de datos relacionales no tienen soporte
+nativo de relaciones (N:M) entre tablas)
 Las claves ajenas en relaciones (1:N) y (M:N) van del lado de las tablas con cardinalidad N, antes que las tablas con cardinalidad 1.
 Las claves primarias funcionan como identificadores estaticos que sirven como raiz en las bases de datos relacionales.
 
