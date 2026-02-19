@@ -1,0 +1,33 @@
+
+Considerando el siguiente video: https://www.youtube.com/watch?v=_SADhrQD5bY
+
+En el video, se explica la "etapa de diseno logico" utilizando el modelo de bases de datos relacional. El proceso se ve de la siguiente forma;
+iniciamos con una descripcion textual del problema que responde a la pregunta "que informacion necesitamos?". Luego, construimos un diagrama
+de **relaciones de entidades** (entidades, atributos, relaciones). Aplicamos las reglas de transformacion para producir un esquema relacional, es decir
+tablas con claves primarias, y claves ajenas (primary key, foreign key).
+
+Las tablas se pueden relacionar de tres formas diferentes;
+(1:1) - uno a uno, donde a cada elemento de tabla A pertenece un unico, o ningun elemento de la tabla B
+(1:N) - uno a muchos, donde a cada elemento de tabla A pertenecen uno o mas elementos de B
+(N:M) - muchos a muchos, donde a uno o muchos elementos de tabla A pertenecen uno o muchos elementos de tabla B. 
+
+La relacion (N:M) generalmente se expresa utilizando una tabla intermediaria que proteje las busquedas y no permite redundar a los datos.
+Las claves ajenas en relaciones (1:N) y (M:N) van del lado de las tablas con cardinalidad N, antes que las tablas con cardinalidad 1.
+Las claves primarias funcionan como identificadores estaticos que sirven como raiz en las bases de datos relacionales.
+
+Conceptualmente, el modelo tiene entidades, atributos, relaciones y cardinalidades. Tambien tiene claves primarias y claves externas.
+Las entidades se convierten en tablas al momento de construir un esquema relacional.
+Los atributos se convierten en columnas dentro de las tablas.
+Las relaciones, (redundantemente), relacionan distintas entidades entre si.
+Las cardinalidades describen las relaciones entre distintas entidades (que posteriormente se convierten en tablas).
+Las claves primarias se mantienen claves primarias, siempre. Se usan para identificar elementos en las bases de datos.
+Las claves secundarias se usan para relacionar distintas entidades (tablas) que tienen relaciones (Wh1:N) o (M:N).
+
+Ejemplos de entidades utilizadas en el video:
+Plato, Categoria, Ingrediente
+
+Ejemplos de atributos utilizadas en el video
+Plato: [nombre, descripcion, dificultad, foto] (asumiendo que este modelo se hace para algun restaurante)
+
+El hombre en el video explica que utilizar relaciones de entidades permite construir modelos alineados con la realidad. Estos conceptos son utiles
+para eliminar redundancia y mantener fidelidad a los requirimientos del.. que nos pague, supongo.
